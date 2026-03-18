@@ -1,7 +1,8 @@
 # projetIN200N
 projet 2048 L1 miashs TD1
 GROUPE :
--Serhane Amine 
+
+- Serhane Amine 
 - Beregoyev Amkhad 
 - Benabdelkader Jassem 
 - Hoang Helene
