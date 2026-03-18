@@ -1,13 +1,13 @@
 # projetIN200N
 projet 2048 L1 miashs TD1
 GROUPE :
- -Serhane Amine 
+-Serhane Amine 
 - Beregoyev Amkhad 
 - Benabdelkader Jassem 
-- helene 
+- Hoang Helene
 # Description du projet
 
-Ce projet consiste à implémenter en Python une version console du jeu 2048
+Ce projet consiste à créer en Python une version du jeu 2048
 ## Conditions de réussite
 
 - Le programme permet de jouer une partie complète de 2048 sur une grille 4x4.
@@ -18,10 +18,11 @@ Ce projet consiste à implémenter en Python une version console du jeu 2048
 ## Conditions d'échec
 
 - La partie est considérée comme terminée lorsque aucun déplacement n'est possible :
-  - la grille est pleine,
+ - la grille est pleine,
   - et aucun mouvement ne permet de fusionner deux tuiles adjacentes.
 - Dans ce cas, le programme affiche un message de fin de partie et le score final.
-Source: - https://en.wikipedia.org/wiki/2048_(video_game)
+Source: 
+- https://en.wikipedia.org/wiki/2048_(video_game)
 - https://play2048.co
 
 ## Structure du code (temporaire)
@@ -33,6 +34,6 @@ Separer le code en plusieur sous code ?
 - une fonction pour le mouvement : chaque direction aura son propre code 
 - une fonction pour verifier les conditions de victoire 
 - une fonction qui relance tout si la grille est remplie et que aucune tuile na atteint 2048
-6 fonction 
+-6 fonction 
 ## Repartition des taches 
 Pas encore décidé 
