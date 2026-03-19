@@ -28,13 +28,45 @@ Source:
 
 ## Structure du code (temporaire)
 Separer le code en plusieur sous code ? 
--On vas d abord faire une fonction pour crée et afficher la grille du jeu #un tableau 4x4 ? 
 
+-On vas d abord faire une fonction pour crée et afficher la grille du jeu #un tableau 4x4 ? 
 - Puis une fonction qui sers a afficher le code dans le terminale pour verifier si ca marche 
--Une fonction pour remplir la grille ? selon les regles du jeu on commence avec un deux ou un 4 sur la grille puis vas replacer un deux ou un 4 a chaque mouvement On cherche toutes les cases qui valent 0, on en choisit une au hasard et on y met un 2  ou un 4 !Les chances entre 2 4 a verifier sur le site du createur!!!!!.
+-Une fonction pour remplir la grille ? selon les regles du jeu on commence avec un deux ou   un 4 sur la grille puis vas replacer un deux ou un 4 a chaque mouvement On cherche toutes   les cases qui valent 0, on en choisit une au hasard et on y met un 2  ou un 4 !Les chances   entre 2 4 a verifier sur le site du createur!!!!!.
 - une fonction pour le mouvement : chaque direction aura son propre code 
 - une fonction pour verifier les conditions de victoire 
 - une fonction qui relance tout si la grille est remplie et que aucune tuile na atteint 2048
 -6 fonction 
 ## Repartition des taches 
-Pas encore décidé 
+Tâche 1 – Responsable GitHub (Amine)
+
+Gérer le dépôt GitHub
+
+Vérifier que les commits sont propres et fonctionnels
+
+Maintenir le README à jour Vérifier que le code est propre
+
+Tâche 2 – Grille et tuiles ( Helene)
+
+Créer la grille 4x4
+
+Ajouter les tuiles aléatoires (2 ou 4) au départ et après chaque coup
+
+Afficher la grille dans le terminal
+
+Tâche 3 – Mouvements et fusions(Amkhad)
+
+Coder les 4 directions (haut, bas, gauche, droite)
+
+Gérer la fusion des tuiles identiques
+
+Mettre à jour le score après chaque fusion
+
+Tâche 4 – Fin de partie (Jassem)
+
+Détecter la victoire (tuile 2048 atteinte)
+
+Détecter la défaite (aucun mouvement possible)
+
+
+
+
