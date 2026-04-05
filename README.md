@@ -29,9 +29,9 @@ Source:
 ## Structure du code (temporaire)
 Separer le code en plusieur sous code ? 
 
--On vas d abord faire une fonction pour crée et afficher la grille du jeu #un tableau 4x4 ? 
+-On vas d abord faire une fonction pour crée et afficher la grille du jeu #un tableau 4x4 
 - Puis une fonction qui sers a afficher le code dans le terminale pour verifier si ca marche 
--Une fonction pour remplir la grille ? selon les regles du jeu on commence avec un deux ou   un 4 sur la grille puis vas replacer un deux ou un 4 a chaque mouvement On cherche toutes   les cases qui valent 0, on en choisit une au hasard et on y met un 2  ou un 4 !Les chances   entre 2 4 a verifier sur le site du createur!!!!!.
+-Une fonction pour remplir la grille selon les regles du jeu on commence avec un deux ou   un 4 sur la grille puis vas replacer un deux ou un 4 a chaque mouvement On cherche toutes   les cases qui valent 0, on en choisit une au hasard et on y met un 2  ou un 4 !Les chances   entre 2 4 1/10 d'avoir un 4 et 9/10 pour un deux.
 - une fonction pour le mouvement : chaque direction aura son propre code 
 - une fonction pour verifier les conditions de victoire 
 - une fonction qui relance tout si la grille est remplie et que aucune tuile na atteint 2048
@@ -42,6 +42,7 @@ Tâche 1 – Responsable GitHub (Amine)
 Gérer le dépôt GitHub
 
 Vérifier que les commits sont propres et fonctionnels
+Gerer le main et s'occuper de verifier si tout marche ensemble
 
 Maintenir le README à jour Vérifier que le code est propre
 
