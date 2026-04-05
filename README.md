@@ -35,7 +35,7 @@ Separer le code en plusieur sous code ?
 - une fonction pour le mouvement : chaque direction aura son propre code 
 - une fonction pour verifier les conditions de victoire 
 - une fonction qui relance tout si la grille est remplie et que aucune tuile na atteint 2048
--6 fonction 
+- une fonction qui calcul le score total 
 ## Repartition des taches 
 Tâche 1 – Responsable GitHub (Amine)
 
@@ -43,6 +43,7 @@ Gérer le dépôt GitHub
 
 Vérifier que les commits sont propres et fonctionnels
 Gerer le main et s'occuper de verifier si tout marche ensemble
+Créer la fonction qui calcul le score final et qui l'affiche 
 
 Maintenir le README à jour Vérifier que le code est propre
 
