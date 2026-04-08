@@ -23,4 +23,10 @@ def ajouter_tuile(grille):
         grille[i][j] = 4 if random.randint(0, 9) == 0 else 2
         return i, j
     return None
+def calculer_score(grille):
+    score = 0
+    for i in range(TAILLE):
+        for j in range(TAILLE):
+            score += grille[i][j]
+    return score
 

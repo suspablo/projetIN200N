@@ -1,73 +1,48 @@
 # projetIN200N
-projet 2048 L1 miashs TD1
-GROUPE :
+Projet 2048 – L1 MIASHS TD1
 
-- Serhane Amine 
-- Beregoyev Amkhad 
-- Benabdelkader Jassem 
-- Hoang Helene
-# Description du projet
+## Groupe
+- Serhane Amine
+- Beregoyev Amkhad
+- Benabdelkader Jassem
+- Hoang Hélène
 
-Ce projet consiste à créer en Python une version du jeu 2048
-## Conditions de réussite
+## Description du projet
+Ce projet consiste à créer en Python une version du jeu 2048.
+La version console est terminée. L'objectif actuel est de développer une interface graphique.
 
-- Le programme permet de jouer une partie complète de 2048 sur une grille 4x4.
-- Le joueur peut déplacer les tuiles dans les quatre directions (haut, bas, gauche, droite).
-- Les tuiles de même valeur fusionnent correctement et le score est mis à jour.
-- Le programme détecte quand une tuile 2048 est atteinte (victoire).
+## Objectif actuel — Interface graphique
+- Créer une fenêtre de jeu avec Tkinter
+- Afficher la grille avec les tuiles colorées
+- Gérer les inputs clavier (flèches directionnelles)
+- Afficher le score en temps réel
+- Afficher un message de victoire ou de game over
 
-## Conditions d'échec
+## Fonctionnalités terminées (version console)
+- Grille 4x4 initialisée avec des tuiles aléatoires (2 ou 4)
+- Déplacements dans les 4 directions (haut, bas, gauche, droite)
+- Fusion des tuiles identiques
+- Détection de la victoire (tuile 2048 atteinte)
+- Détection de la défaite (aucun mouvement possible)
+- Calcul et affichage du score
 
-- La partie est considérée comme terminée lorsque aucun déplacement n'est possible :
- - la grille est pleine,
-  - et aucun mouvement ne permet de fusionner deux tuiles adjacentes.
-- Dans ce cas, le programme affiche un message de fin de partie et le score final.
-Source: 
+## Structure du code
+| Fichier | Rôle |
+|---|---|
+| `grille.py` | Création, affichage de la grille, ajout de tuiles, score |
+| `Mouvement.py` | Déplacements et fusions dans les 4 directions |
+| `conditionreussite.py` | Détection victoire et défaite |
+| `main.py` | Boucle principale du jeu |
+
+## Répartition des tâches
+- **Amine** – Responsable GitHub, `main.py`, score, README, interface graphique
+- **Hélène** – `grille.py` : grille, tuiles aléatoires, affichage
+- **Amkhad** – `Mouvement.py` : déplacements et fusions
+- **Jassem** – `conditionreussite.py` : détection victoire/défaite
+
+## Sources
 - https://en.wikipedia.org/wiki/2048_(video_game)
 - https://play2048.co
-
-## Structure du code (temporaire)
-Separer le code en plusieur sous code ? 
-
--On vas d abord faire une fonction pour crée et afficher la grille du jeu #un tableau 4x4 
-- Puis une fonction qui sers a afficher le code dans le terminale pour verifier si ca marche 
--Une fonction pour remplir la grille selon les regles du jeu on commence avec un deux ou   un 4 sur la grille puis vas replacer un deux ou un 4 a chaque mouvement On cherche toutes   les cases qui valent 0, on en choisit une au hasard et on y met un 2  ou un 4 !Les chances   entre 2 4 1/10 d'avoir un 4 et 9/10 pour un deux.
-- une fonction pour le mouvement : chaque direction aura son propre code 
-- une fonction pour verifier les conditions de victoire 
-- une fonction qui relance tout si la grille est remplie et que aucune tuile na atteint 2048
-- une fonction qui calcul le score total 
-## Repartition des taches 
-Tâche 1 – Responsable GitHub (Amine)
-
-Gérer le dépôt GitHub
-
-Vérifier que les commits sont propres et fonctionnels
-Gerer le main et s'occuper de verifier si tout marche ensemble
-Créer la fonction qui calcul le score final et qui l'affiche 
-
-Maintenir le README à jour Vérifier que le code est propre
-
-Tâche 2 – Grille et tuiles ( Helene)
-
-Créer la grille 4x4
-
-Ajouter les tuiles aléatoires (2 ou 4) au départ et après chaque coup
-
-Afficher la grille dans le terminal
-
-Tâche 3 – Mouvements et fusions(Amkhad)
-
-Coder les 4 directions (haut, bas, gauche, droite)
-
-Gérer la fusion des tuiles identiques
-
-Mettre à jour le score après chaque fusion
-
-Tâche 4 – Fin de partie (Jassem)
-
-Détecter la victoire (tuile 2048 atteinte)
-
-Détecter la défaite (aucun mouvement possible)
 
 
 
