@@ -6,17 +6,11 @@ Projet 2048 – L1 MIASHS TD1
 - Beregoyev Amkhad
 - Benabdelkader Jassem
 - Hoang Hélène
+https://github.com/suspablo/projetIN200N2048.git
 
-## Description du projet
-Ce projet consiste à créer en Python une version du jeu 2048.
-La version console est terminée. L'objectif actuel est de développer une interface graphique.
-
-## Objectif actuel — Interface graphique
-- Créer une fenêtre de jeu avec Tkinter
-- Afficher la grille avec les tuiles colorées
-- Gérer les inputs clavier (flèches directionnelles)
-- Afficher le score en temps réel
-- Afficher un message de victoire ou de game over
+## Description
+Ce projet consiste à créer le jeu 2048 en Python.
+La version console est terminée, on travaille maintenant sur une interface graphique avec Tkinter.
 
 ## Fonctionnalités terminées (version console)
 - Grille 4x4 initialisée avec des tuiles aléatoires (2 ou 4)
@@ -26,24 +20,26 @@ La version console est terminée. L'objectif actuel est de développer une inter
 - Détection de la défaite (aucun mouvement possible)
 - Calcul et affichage du score
 
-## Structure du code
-| Fichier | Rôle |
-|---|---|
-| `grille.py` | Création, affichage de la grille, ajout de tuiles, score |
-| `Mouvement.py` | Déplacements et fusions dans les 4 directions |
-| `conditionreussite.py` | Détection victoire et défaite |
-| `main.py` | Boucle principale du jeu |
+## Objectif actuel — Interface graphique
+- Créer une fenêtre de jeu avec Tkinter
+- Afficher la grille avec les tuiles colorées
+- Gérer les inputs clavier (flèches directionnelles)
+- Afficher le score en temps réel
+- Afficher un message de victoire ou de game over
 
-## Répartition des tâches
-- **Amine** – Responsable GitHub, `main.py`, score, README, interface graphique
-- **Hélène** – `grille.py` : grille, tuiles aléatoires, affichage
-- **Amkhad** – `Mouvement.py` : déplacements et fusions
-- **Jassem** – `conditionreussite.py` : détection victoire/défaite
+## Fichiers
+- grille.py : création et affichage de la grille
+- Mouvement.py : déplacements et fusions
+- conditionreussite.py : victoire et défaite
+- main.py : boucle principale du jeu
+
+## Répartition
+- Amine : GitHub, main.py, score, README
+- Hélène : grille.py
+- Amkhad : Mouvement.py
+- Jassem : conditionreussite.py
 
 ## Sources
 - https://en.wikipedia.org/wiki/2048_(video_game)
 - https://play2048.co
-
-
-
-
+- https://youtu.be/b4XP2IcI-Bg?si=jk0yCSx2jvBjHlwQ
