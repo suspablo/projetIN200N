@@ -44,3 +44,14 @@ def mettre_a_jour(cellules, grille, label_score, score):
             couleur = COULEURS.get(val, "#3c3a32")
             cellules[i][j].configure(text=texte, bg=couleur)
     label_score.configure(text="Score : " + str(score))
+def afficher_fin(fenetre, message):
+    """Affiche une fenêtre popup de fin de partie."""
+    popup = tk.Toplevel(fenetre)
+    popup.title("Fin de partie")
+    popup.resizable(False, False)
+
+    tk.Label(popup, text=message, font=("Helvetica", 24, "bold"),
+             pady=20, padx=40).pack()
+
+    tk.Button(popup, text="Quitter", font=("Helvetica", 14),
+              command=fenetre.destroy).pack(pady=10)
