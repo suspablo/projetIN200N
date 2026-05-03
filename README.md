@@ -6,13 +6,18 @@ Projet 2048 – L1 MIASHS TD1
 - Beregoyev Amkhad
 - Benabdelkader Jassem
 - Hoang Hélène
-https://github.com/suspablo/projetIN200N2048.git
+
+🔗 https://github.com/suspablo/projetIN200N2048.git
 
 ## Description
 Ce projet consiste à créer le jeu 2048 en Python.
-La version console est terminée, on travaille maintenant sur une interface graphique avec Tkinter.
+La version console est terminée et une interface graphique
+avec Tkinter a été ajoutée. Le jeu se joue désormais
+avec les touches fléchées dans une fenêtre graphique colorée.
 
-## Fonctionnalités terminées (version console)
+## Fonctionnalités terminées
+
+### Version console
 - Grille 4x4 initialisée avec des tuiles aléatoires (2 ou 4)
 - Déplacements dans les 4 directions (haut, bas, gauche, droite)
 - Fusion des tuiles identiques
@@ -20,21 +25,35 @@ La version console est terminée, on travaille maintenant sur une interface grap
 - Détection de la défaite (aucun mouvement possible)
 - Calcul et affichage du score
 
-## Objectif actuel — Interface graphique
-- Créer une fenêtre de jeu avec Tkinter
-- Afficher la grille avec les tuiles colorées
-- Gérer les inputs clavier (flèches directionnelles)
-- Afficher le score en temps réel
-- Afficher un message de victoire ou de game over
+### Interface graphique (Tkinter)
+- Fenêtre de jeu avec grille 4x4 colorée
+- Couleurs différentes pour chaque valeur de tuile
+- Déplacements via les touches fléchées du clavier
+- Affichage du score en temps réel
+- Popup de victoire et de game over
+
+## Utilisation
+
+### Lancer le jeu
+```bash
+python main.py
+```
+
+### Lancer la démo victoire
+```bash
+python demo.py
+```
 
 ## Fichiers
-- grille.py : création et affichage de la grille
-- Mouvement.py : déplacements et fusions
-- conditionreussite.py : victoire et défaite
-- main.py : boucle principale du jeu
+- `grille.py` : création et affichage de la grille
+- `Mouvement.py` : déplacements et fusions
+- `conditionreussite.py` : victoire et défaite
+- `interface.py` : interface graphique Tkinter
+- `demo.py` : démonstration visuelle d'une grille gagnée
+- `main.py` : point d'entrée du jeu
 
 ## Répartition
-- Amine : GitHub, main.py, score, README
+- Amine : GitHub, main.py, interface.py, demo.py, score, README
 - Hélène : grille.py
 - Amkhad : Mouvement.py
 - Jassem : conditionreussite.py
