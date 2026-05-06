@@ -1,34 +1,49 @@
 from grille import initialiser_grille, afficher_grille, ajouter_tuile, calculer_score
 from Mouvement import deplacer_gauche, deplacer_droite, deplacer_haut, deplacer_bas
-from  conditionreussite import partie_perdue, partie_gagnee
+from conditionreussite import partie_perdue, partie_gagnee
+import tkinter as tk
+from interface import creer_fenetre, creer_cellules, mettre_a_jour, afficher_fin
 
+# --- Initialisation du jeu ---
 grille = initialiser_grille()
 ajouter_tuile(grille)
 ajouter_tuile(grille)
-afficher_grille(grille)
 
-while True:
-    direction = input("Direction (z=haut, s=bas, q=gauche, d=droite) : ")
+# --- Création de la fenêtre ---
+fenetre = creer_fenetre()
 
-    if direction == 'q':
+label_score = tk.Label(fenetre, text="Score : 0", font=("Helvetica", 18, "bold"))
+label_score.grid(row=0, column=0, columnspan=4, pady=10)
+
+cellules = creer_cellules(fenetre)
+mettre_a_jour(cellules, grille, label_score, calculer_score(grille))
+
+# --- Fonction appelée à chaque touche ---
+def jouer(event):
+    if event.keysym == "Left":
         deplacer_gauche(grille)
-    elif direction == 'd':
+    elif event.keysym == "Right":
         deplacer_droite(grille)
-    elif direction == 'z':
+    elif event.keysym == "Up":
         deplacer_haut(grille)
-    elif direction == 's':
+    elif event.keysym == "Down":
         deplacer_bas(grille)
     else:
-        print("Touche invalide, utilise z/q/s/d")
-        continue
+        return
 
     ajouter_tuile(grille)
-    afficher_grille(grille)
-    print("Score :", calculer_score(grille))
+    mettre_a_jour(cellules, grille, label_score, calculer_score(grille))
 
     if partie_gagnee(grille):
-        print(" Tu as gagné !")
-        break
+        afficher_fin(fenetre, "🎉 Tu as gagné !")
     if partie_perdue(grille):
-        print("Game over !")
-        break
+        afficher_fin(fenetre, "💀 Game Over !")
+
+# --- Lier les touches fléchées ---
+fenetre.bind("<Left>",  jouer)
+fenetre.bind("<Right>", jouer)
+fenetre.bind("<Up>",    jouer)
+fenetre.bind("<Down>",  jouer)
+
+# --- Lancer la fenêtre ---
+fenetre.mainloop()

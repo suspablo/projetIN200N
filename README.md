@@ -41,7 +41,7 @@ python main.py
 
 ### Lancer la démo victoire
 ```bash
-python demo.py
+python simulation-fin.py
 ```
 
 ## Fichiers
@@ -49,14 +49,14 @@ python demo.py
 - `Mouvement.py` : déplacements et fusions
 - `conditionreussite.py` : victoire et défaite
 - `interface.py` : interface graphique Tkinter
-- `demo.py` : démonstration visuelle d'une grille gagnée
+- `simulation-fin.py` : démonstration visuelle d'une grille gagnée
 - `main.py` : point d'entrée du jeu
 
 ## Répartition
-- Amine : GitHub, main.py, interface.py, demo.py, score, README
-- Hélène : grille.py
+- Amine : GitHub, main.py, demo.py, README
+- Hélène : grille.py, interface.py
 - Amkhad : Mouvement.py
-- Jassem : conditionreussite.py
+- Jassem : conditionreussite.py, score
 
 ## Sources
 - https://en.wikipedia.org/wiki/2048_(video_game)

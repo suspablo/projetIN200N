@@ -5,8 +5,8 @@ from interface import creer_fenetre, creer_cellules, mettre_a_jour, afficher_fin
 grille_gagnee = [
     [2048, 1024, 512, 256],
     [8,    16,   32,  128],
-    [4,    2,    4,   8],
-    [0,    0,    0,   2],
+    [0,    0,    2,   4],
+    [0,    0,    0,   0],
 ]
 
 fenetre = creer_fenetre()

@@ -13,7 +13,7 @@ COULEURS = {
     256:  "#edcc61",
     512:  "#edc850",
     1024: "#edc53f",
-    2048: "#edc22e",
+    2048: "#f7c522",
 }
 
 def creer_fenetre():
